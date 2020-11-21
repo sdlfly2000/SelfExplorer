@@ -20,6 +20,7 @@ namespace SelfExplorer
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.UseUrls("http://localhost:5200");
                     webBuilder.UseStartup<Startup>();
                 });
     }
